@@ -1,0 +1,540 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto Flex", sans-serif;
+  background-image: url(../img/fondo_01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #000;
+}
+.contenedor_body {
+  display: block;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 900;
+  font-size: 3rem;
+  color: whitesmoke;
+}
+h1 span {
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+
+.titulo {
+  display: none;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 30px 0;
+  background-color: #ff0000;
+  color: #fff;
+  border-top: 1px solid #ff0000;
+  text-shadow: 0 0 5px #ff0000;
+}
+h3 {
+  font-size: 1.5rem;
+  color: #000;
+  border: none;
+  padding: 5px;
+  border-bottom: 1px solid darkred;
+
+  margin-top: 10px;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 5px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ff0000;
+  padding: 5px;
+  height: 100px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+.cabecera {
+  text-align: center;
+}
+.cabecera > div {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px;
+  /* border-bottom: thin solid rgba(169, 0, 0, 0.336); */
+  border-bottom: thin solid rgba(169, 0, 0, 0.336);
+  cursor: pointer;
+}
+.cabecera > div > a {
+  color: #000;
+}
+.cabecera > div:hover {
+  background-color: #e63e3e;
+}
+.cabecera > div > a:hover {
+  color: #fff;
+}
+.separador {
+  display: none;
+}
+
+#nintendo {
+  /*seccion home nintendo*/
+  margin-top: 20px;
+}
+
+/*Formulario de contacto - novedades*/
+.form_informacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ccc;
+  color: #fff;
+}
+
+.datos_personales {
+  box-shadow: 5px 5px 5px #ff0000;
+  border-radius: 10px;
+  padding: 10px 25px;
+  margin: 10px 0;
+  background-color: #ff0000;
+  width: 100%;
+}
+
+.datos {
+  margin: 10px 0;
+  color: #fff;
+}
+
+input {
+  display: flex;
+  padding: 5px 10px;
+  margin-left: 5px 10px;
+  align-items: center;
+  width: 100%;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #ff0000;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+input[type="submit"]:hover {
+  background-color: #e63e3e;
+  transition: 0.5s;
+}
+
+fieldset {
+  border: none;
+}
+
+.botones_contenedor {
+  width: 100%;
+  height: calc(58px + 1rem);
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  position: fixed;
+  /* bottom: 45px; */
+  bottom: 0;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.botones_estilo {
+  margin: auto;
+  height: 58px;
+  width: 96%;
+  max-width: 440px;
+}
+
+.botones_nav {
+  position: relative;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: rgb(255, 255, 255);
+  border-radius: 100px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0.25rem 0.5rem 0px;
+}
+
+.botones_link {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.jugabilidad {
+  background: rgb(230, 0, 18);
+  border: none;
+  border-radius: 50%;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin-top: -1rem;
+}
+
+.subir {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 80px;
+  right: 10px;
+}
+
+footer {
+  display: inline-block;
+  padding-top: 20px;
+  vertical-align: top;
+  text-align: left;
+  width: 100%;
+  height: 300px;
+  background-color: #ccc;
+  border-top: 1px solid #ff0000;
+}
+.nombre {
+  color: #000;
+  text-align: center;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 20px auto;
+  background-color: #ccc;
+  width: 100%;
+}
+.imagen_mario {
+  max-width: 80%;
+  margin: auto;
+}
+
+.foto {
+  display: none;
+}
+
+.redes {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/***************************************************/
+/******************* 600 / 768 *********************/
+/***************************************************/
+@media screen and (min-width: 576px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .titulo {
+    display: flex;
+  }
+
+  h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  h1 span {
+    margin-left: 10px;
+    padding-top: 8px;
+  }
+}
+/***************************************************/
+/******************* 768 ***************************/
+/***************************************************/
+@media screen and (min-width: 768px) {
+  .cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .btn_nav {
+    width: 100%;
+    height: 80px;
+    padding: 0;
+  }
+
+  /*----------------------------------*/
+  /*Seccion nintendo - HOME ----------*/
+  /*----------------------------------*/
+  .home_01,
+  .modos_contenedor_gral,
+  .joy_contenedor_general {
+    font-size: 0;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    position: relative;
+    max-width: 768px;
+  }
+  .img_home,
+  .img_modos_gral,
+  .img_joy_general {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 5px 5px 10px #ff0000;
+    border-radius: 10px;
+  }
+
+  .home_txt,
+  .modos_txt_gral,
+  .joy_txt_general {
+    font-size: 1rem;
+    position: absolute;
+    background-color: rgba(137, 43, 226, 0.3);
+    width: 100%;
+    height: 40%;
+    bottom: 0;
+    color: #000;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .edicion-oled {
+    margin-bottom: 20px;
+  }
+
+  /*----------------------------------------------*/
+  /*Seccion CARACTERISTICAS PRINCIPALES ----------*/
+  /*----------------------------------------------*/
+  .h2_titulo {
+    display: none;
+  }
+
+  .separador {
+    display: block;
+    font-size: 0;
+    margin: 1rem 0;
+    position: relative;
+    width: 100%;
+  }
+  .separador h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    position: absolute;
+    top: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  /*seccion caracterirsticas*
+  * imagenes globales
+  */
+
+  .img_carac {
+    box-shadow: 5px 5px 10px #ff0000;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /*TEXT --- IMAGEN*/
+  .carac_01,
+  .carac_03,
+  .carac_05,
+  .carac_07 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .carac_txt01,
+  .carac_txt03,
+  .carac_txt05,
+  .carac_txt07 {
+    width: 60%;
+    margin-right: 10px;
+  }
+
+  /*IMAGEN --- TEXTO*/
+  .carac_02,
+  .carac_04,
+  .carac_06 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .carac_txt02,
+  .carac_txt04,
+  .carac_txt06 {
+    width: 60%;
+    margin-left: 10px;
+  }
+
+  /*----------------------------------------------*/
+  /*Seccion 3 MODOS y Controles Joy---------------*/
+  /*----------------------------------------------*/
+
+  .modos_contenedor,
+  .contenedor_joy {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+    margin-bottom: 40px;
+  }
+
+  .modos_contenedor01,
+  .joy_contenedor01 {
+    width: calc(33.33% - 1rem);
+    margin: 0 10px;
+    height: 400px;
+  }
+
+  /*---------------------------------------------*/
+  /*---- Galeria Juegos ------------------------ */
+  /*----------------------------------------------*/
+  .galeria_general {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 768px;
+  }
+  .galeria_grupo {
+    display: inline-block;
+    width: calc(50% - 1rem);
+    height: auto;
+    margin: auto;
+    vertical-align: top;
+  }
+  .galeria {
+    padding: 10px;
+  }
+  .juegos {
+    width: 100%;
+    box-shadow: 5px 5px 10px #ff0000;
+    border-radius: 10px;
+  }
+
+  /*---------------------------------------------*/
+  /*---- Formulario ---------------------------- */
+  /*---------------------------------------------*/
+  .contenedor_form_general {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ccc;
+  }
+
+  .datos_personales {
+    width: 500px;
+  }
+
+  .mario_kart {
+    max-width: 100%;
+  }
+  /*---------------------------------------------*/
+  /*---- footer + foto ------------------------- */
+  /*---------------------------------------------*/
+
+  .contenedor_footer {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    /* max-width: 768px; */
+    height: auto;
+  }
+  .general_footer {
+    /* border-top: 1px solid #ff0000; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .datos_footer {
+    padding: 10px;
+  }
+  .foto {
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px #ff0000;
+  }
+}
+
+/***************************************************/
+/******************* 991 ***************************/
+/***************************************************/
+@media screen and (min-width: 991px) {
+  .botones_contenedor {
+    display: none;
+  }
+
+  /*---------------------------------------------*/
+  /*---- Galeria Juegos ------------------------ */
+  /*----------------------------------------------*/
+  .galeria_general {
+    display: block;
+  }
+
+  .galeria_grupo {
+    display: inline-block;
+    width: calc(33.33% - 1rem);
+    height: auto;
+    margin: 0 auto;
+    vertical-align: top;
+  }
+  .galeria {
+    padding: 10px;
+  }
+  .juegos {
+    width: 100%;
+    box-shadow: 5px 5px 10px #ff0000;
+    border-radius: 10px;
+  }
+}
